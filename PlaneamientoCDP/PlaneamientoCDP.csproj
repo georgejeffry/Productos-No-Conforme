@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED27B137-DC94-408B-B983-8E9A5986758D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PlaneamientoCDP</RootNamespace>
+    <AssemblyName>PlaneamientoCDP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PlaneamientoCDP.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Data.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Data.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.ButtonBar.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.CalendarCombo.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.Common.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.ExplorerBar.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.FilterEditor.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.FilterEditor.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.GridEX.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Ribbon.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.Ribbon.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.Schedule.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.TimeLine.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v4, Version=4.0.36.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerias\Lib4.5v4\GPNETv4\Janus4\Janus.Windows.UI.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCodigoActivacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCodigoActivacion.Designer.cs">
+      <DependentUpon>frmCodigoActivacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManProdNoCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManProdNoCon.Designer.cs">
+      <DependentUpon>frmManProdNoCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMotivoAnulacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMotivoAnulacion.Designer.cs">
+      <DependentUpon>frmMotivoAnulacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteProdNoConf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteProdNoConf.Designer.cs">
+      <DependentUpon>frmReporteProdNoConf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVBProdNoConfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVBProdNoConfor.Designer.cs">
+      <DependentUpon>frmVBProdNoConfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisorImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisorImg.Designer.cs">
+      <DependentUpon>frmVisorImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCodigoActivacion.resx">
+      <DependentUpon>frmCodigoActivacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManProdNoCon.resx">
+      <DependentUpon>frmManProdNoCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMotivoAnulacion.resx">
+      <DependentUpon>frmMotivoAnulacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteProdNoConf.resx">
+      <DependentUpon>frmReporteProdNoConf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVBProdNoConfor.resx">
+      <DependentUpon>frmVBProdNoConfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisorImg.resx">
+      <DependentUpon>frmVisorImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Librerias\Lib4.5v4\GPNETv4\GPNETv4.csproj">
+      <Project>{4835bf05-d023-45b3-84c3-b2bcbbb37c43}</Project>
+      <Name>GPNETv4</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camara 79px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camara 79px vacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camara 79px ing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camara 16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
